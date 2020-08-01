@@ -19,10 +19,10 @@ public class BaseTest {
 
 	@Parameters("browser")
 	@BeforeTest
-	public void setUp(@Optional String browserName) {
+	public void setUp(String browserName) {
 		basePage = new BasePage();
 		prop = basePage.init_prop();
-		prop.setProperty("browser", browserName); //uncomment when running docker and change optional in setup. Config set to true the remote.
+		prop.setProperty("browser", browserName);
 		driver = basePage.init_driver(prop);
 		loginPage = new LoginPage(driver);
 	}

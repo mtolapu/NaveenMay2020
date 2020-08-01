@@ -12,11 +12,12 @@ public class HomePage extends BasePage{
 	private WebDriver driver;
 	ElementUtil elementUtil;
 	
-	By header = By.cssSelector("h1.dashboard-selector__title");
-	By accountName = By.cssSelector("span.account-name ");
+	By header = By.xpath("//i18n-string[text()='Dashboard Library']");//By.cssSelector("h1.dashboard-selector__title");
+	By accountName = By.cssSelector("div.user-info-name");//By.cssSelector("span.account-name ");
 	
 	By contactsPrimaryLink = By.id("nav-primary-contacts-branch");
 	By contactsSecondaryLink = By.id("nav-secondary-contacts");
+	By accountNameMenu= By.id("account-menu");
 	
 	public HomePage(WebDriver driver){
 		this.driver = driver;
@@ -34,6 +35,10 @@ public class HomePage extends BasePage{
 	}
 	
 	public String getLoggedInAccountName(){
+//		if(elementUtil.doIsDisplayed(accountName))
+//			return elementUtil.doGetText(accountName);
+//		return null;
+		elementUtil.clickWhenReady(accountNameMenu, 20);
 		if(elementUtil.doIsDisplayed(accountName))
 			return elementUtil.doGetText(accountName);
 		return null;

@@ -56,7 +56,8 @@ public class BasePage {
 				tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
 			}
 		} else if (browserName.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
+		//	WebDriverManager.firefoxdriver().setup();
+			System.setProperty("webdriver.gecko.driver", "C:\\ff\\geckodriver.exe");
 			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 				init_remoteWebDriver(browserName);
 			} else {
@@ -120,10 +121,15 @@ public class BasePage {
 	public Properties init_prop() {
 		prop = new Properties();
 		String path = null;
-		String env = null;
+		String env =null;
+		
+		//String envi = prop.getProperty("env").trim();
+
+		//System.out.println("env name is : " + envi);
 
 		try {
 			env = System.getProperty("env");
+			//env=System.getenv(env);
 			System.out.println("Running on Environment: ---->" + env);
 			if (env == null) {
 				path = "./src/main/java/com/qa/hubspot/config/config.properties";

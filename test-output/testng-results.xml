@@ -2,39 +2,37 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub spot Test automtion regression suite" duration-ms="30574" started-at="2020-07-27T03:25:46Z" finished-at="2020-07-27T03:26:16Z">
+  <suite name="Default suite" duration-ms="28163" started-at="2020-07-30T02:42:02Z" finished-at="2020-07-30T02:42:30Z">
     <groups>
     </groups>
-    <test name="HubSpot Feature Testing - chrome" duration-ms="30574" started-at="2020-07-27T03:25:46Z" finished-at="2020-07-27T03:26:16Z">
+    <test name="Default test" duration-ms="28163" started-at="2020-07-30T02:42:02Z" finished-at="2020-07-30T02:42:30Z">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@51bde877]" name="setUp" is-config="true" duration-ms="17333" started-at="2020-07-27T03:25:46Z" finished-at="2020-07-27T03:26:03Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@53667cbe]" name="setUp" is-config="true" duration-ms="16420" started-at="2020-07-30T02:42:02Z" finished-at="2020-07-30T02:42:18Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
+              <value is-null="true"/>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@51bde877]" name="verifySignUpLinkTest" duration-ms="9118" started-at="2020-07-27T03:26:03Z" finished-at="2020-07-27T03:26:13Z">
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@53667cbe]" name="verifySignUpLinkTest" duration-ms="8287" started-at="2020-07-30T02:42:18Z" finished-at="2020-07-30T02:42:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpLinkTest -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@51bde877]" name="verifyLoginPageTitleTest" duration-ms="399" started-at="2020-07-27T03:26:13Z" finished-at="2020-07-27T03:26:14Z">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@53667cbe]" name="verifyLoginPageTitleTest" duration-ms="134" started-at="2020-07-30T02:42:27Z" finished-at="2020-07-30T02:42:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@51bde877]" name="loginTest" duration-ms="1564" started-at="2020-07-27T03:26:14Z" finished-at="2020-07-27T03:26:15Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@53667cbe]" name="loginTest" duration-ms="1427" started-at="2020-07-30T02:42:27Z" finished-at="2020-07-30T02:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@51bde877]" name="tearDown" is-config="true" duration-ms="1223" started-at="2020-07-27T03:26:15Z" finished-at="2020-07-27T03:26:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@53667cbe]" name="tearDown" is-config="true" duration-ms="1230" started-at="2020-07-30T02:42:28Z" finished-at="2020-07-30T02:42:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-    </test> <!-- HubSpot Feature Testing - chrome -->
-  </suite> <!-- Hub spot Test automtion regression suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
